@@ -6,11 +6,9 @@ A polished, responsive agricultural export business website demo built with HTML
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-[🚀 Live Demo](PLACEHOLDER)
-
-> **Placeholder:** The live deployment URL is not available yet. Update this link once the site is deployed (e.g., to GitHub Pages).
+[View Live Demo](https://fafda-jalebi.github.io/golden-agri-export-demo/)
 
 ---
 
