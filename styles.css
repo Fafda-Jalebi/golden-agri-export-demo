@@ -48,6 +48,10 @@ a {
   text-decoration: none;
 }
 
+[id] {
+  scroll-margin-top: 110px;
+}
+
 .site-header {
   position: fixed;
   inset: 18px 20px auto;
@@ -1222,6 +1226,10 @@ button:focus-visible {
     gap: clamp(32px, 5vw, 72px);
   }
 
+  [id] {
+    scroll-margin-top: 90px;
+  }
+
   .hero-showcase {
     min-height: 520px;
   }
@@ -1276,15 +1284,15 @@ button:focus-visible {
   }
 
   .section {
-    padding: 64px 0 48px;
+    padding: 56px 0 40px;
   }
 
   .section-heading {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
-  .stats-strip div {
-    padding: 18px 20px;
+  [id] {
+    scroll-margin-top: 86px;
   }
 
   .site-header {
@@ -1299,68 +1307,135 @@ button:focus-visible {
     min-width: 0;
   }
 
+  .brand strong {
+    font-size: 0.9rem;
+  }
+
+  .brand small {
+    font-size: 0.66rem;
+  }
+
   .site-nav a {
     font-size: 0.95rem;
     padding: 10px 12px;
   }
 
-  h1 {
-    font-size: clamp(2.1rem, 11vw, 2.95rem);
-  }
-
   .hero {
     padding-top: 96px;
-    gap: 28px;
+    padding-bottom: 56px;
+    gap: 24px;
   }
 
-  .hero-bg {
-    inset-inline: 0;
+  .hero-copy {
+    margin-bottom: 18px;
+  }
+
+  .hero-points {
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .hero-points span {
+    gap: 8px;
+    padding: 9px 13px;
+    font-size: 0.82rem;
   }
 
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
+    gap: 12px;
   }
 
   .hero-actions .btn {
     width: 100%;
   }
 
+  .hero-bg {
+    inset-inline: 0;
+  }
+
   .hero-showcase {
-    min-height: 420px;
+    min-height: 380px;
   }
 
   .main-pack {
-    padding: 10px;
+    padding: 8px;
   }
 
   .main-pack img {
-    max-width: 88%;
-    max-height: 88%;
+    max-width: 90%;
+    max-height: 90%;
   }
 
   .quality-badge {
     right: 8px;
-    bottom: 28px;
-    width: 124px;
+    bottom: 20px;
+    width: 118px;
     padding: 14px;
   }
 
-  .stats-strip,
-  .check-list,
-  .export-cards {
-    grid-template-columns: 1fr;
+  h1 {
+    font-size: clamp(1.9rem, 8.5vw, 2.5rem);
+    line-height: 1.08;
+  }
+
+  h2,
+  .section-heading h2,
+  .gallery-section .section-heading h2,
+  .facility-section .section-heading h2,
+  .quality-panel h2,
+  .export-banner h2,
+  .location-copy h2 {
+    font-size: clamp(1.5rem, 6vw, 2.1rem);
+    line-height: 1.12;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+  }
+
+  .quality-panel {
+    padding: 26px 22px;
   }
 
   .panel-brand {
     align-items: flex-start;
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .quality-panel > p {
+    margin-bottom: 20px;
+  }
+
+  .check-list {
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
+  .check-list span {
+    padding: 14px 12px;
+    font-size: 0.85rem;
+  }
+
+  .stats-strip div {
+    padding: 16px 20px;
+  }
+
+  .stats-strip strong {
+    font-size: clamp(1.35rem, 6vw, 1.7rem);
+  }
+
+  .stats-strip span {
+    font-size: 0.92rem;
+  }
+
   .process-list {
-    padding-left: 0;
-    gap: 14px;
+    padding: 16px;
+    gap: 12px;
   }
 
   .process-list::before {
@@ -1368,41 +1443,150 @@ button:focus-visible {
   }
 
   .process-list article {
-    grid-template-columns: 1fr;
+    grid-template-columns: 48px 1fr;
+    gap: 14px;
     min-height: auto;
-    padding: 18px 18px;
+    padding: 14px 16px;
+  }
+
+  .process-list span {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+  }
+
+  .process-list h3 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+  }
+
+  .process-list p {
+    font-size: 0.95rem;
   }
 
   .product-card {
-    grid-template-rows: 340px 1fr;
+    grid-template-rows: 280px 1fr;
+    gap: 16px;
   }
 
   .product-copy,
   .contact-card {
-    padding: 18px;
+    padding: 22px 20px;
   }
 
-  .gallery-item {
-    min-height: 320px;
+  .product-copy ul {
+    margin-top: 16px;
+    gap: 7px;
   }
 
-  .facility-photo,
-  .facility-photo.large {
-    min-height: 230px;
+  .product-copy h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
   }
 
   .gallery-section .section-heading {
     display: block;
   }
 
-  .map-card {
-    min-height: 330px;
+  .gallery-grid {
+    gap: 14px;
+  }
+
+  .gallery-item {
+    min-height: 300px;
+  }
+
+  .gallery-item img {
     padding: 24px;
+  }
+
+  .gallery-item figcaption {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+
+  .facility-grid {
+    gap: 14px;
+  }
+
+  .facility-photo,
+  .facility-photo.large {
+    min-height: 220px;
+  }
+
+  .facility-photo figcaption {
+    font-size: 0.95rem;
+  }
+
+  .export-banner {
+    padding: 30px 20px;
+    gap: 24px;
+  }
+
+  .export-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .export-cards span {
+    min-height: 76px;
+    padding: 16px 12px;
+    font-size: 0.95rem;
+  }
+
+  .location-section {
+    gap: 22px;
+  }
+
+  .map-card {
+    min-height: 340px;
+    padding: 0;
+  }
+
+  .map-frame {
+    min-height: 240px;
+  }
+
+  .map-card-copy {
+    padding: 22px;
+  }
+
+  .map-card-copy strong {
+    font-size: 1.2rem;
+  }
+
+  .map-card-copy .btn,
+  .location-copy .btn {
+    width: 100%;
+  }
+
+  .contact-grid {
+    gap: 14px;
+  }
+
+  .contact-card {
+    min-height: auto;
+  }
+
+  .contact-card .contact-icon {
+    margin-bottom: 16px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
   }
 
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
+    gap: 14px;
+    padding: 22px 0 28px;
+  }
+
+  .site-footer img {
+    width: 88px;
   }
 }
 
