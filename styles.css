@@ -354,9 +354,16 @@ button:focus-visible {
 .main-pack {
   position: absolute;
   inset: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 12px 24px;
+}
+
+.main-pack img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .quality-badge {
@@ -1236,12 +1243,16 @@ button:focus-visible {
 
   .main-pack {
     inset: 8px 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
   }
 
   .main-pack img {
     max-width: 92%;
     max-height: 92%;
+    object-fit: contain;
   }
 
   .quality-badge {
@@ -1322,7 +1333,7 @@ button:focus-visible {
 
   .hero {
     padding-top: 96px;
-    padding-bottom: 56px;
+    padding-bottom: 44px;
     gap: 24px;
   }
 
@@ -1352,20 +1363,29 @@ button:focus-visible {
   }
 
   .hero-bg {
-    inset-inline: 0;
+    inset: 76px 0 30px;
   }
 
   .hero-showcase {
-    min-height: 380px;
+    min-height: 0;
+  }
+
+  .showcase-card {
+    position: relative;
+    inset: auto;
   }
 
   .main-pack {
-    padding: 8px;
+    position: relative;
+    inset: auto;
+    padding: 0 8px 6px;
   }
 
   .main-pack img {
-    max-width: 90%;
-    max-height: 90%;
+    width: min(78%, 320px);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .quality-badge {
@@ -1404,7 +1424,20 @@ button:focus-visible {
   .panel-brand {
     align-items: flex-start;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .panel-logo {
+    width: 132px;
+  }
+
+  .quality-panel .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .quality-panel h2 {
+    margin-bottom: 16px;
   }
 
   .quality-panel > p {
